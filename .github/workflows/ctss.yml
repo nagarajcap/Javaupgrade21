@@ -1,4 +1,4 @@
-name: Hello World Action
+name: HelloWorldAction
 
 on:
   workflow_dispatch:
