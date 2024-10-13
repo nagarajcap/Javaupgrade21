@@ -1,6 +1,6 @@
 #!/bin/bash
 GITHUB_REPO="nagarajcap/Javaupgrade21"  # Replace with your GitHub repo
-GITHUB_TOKEN="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"    # GitHub token with repo access
+GITHUB_TOKEN="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"    # GitHub token with repo access
 GITHUB_WORKFLOW="jmeterui.yml"      # Replace with the exact workflow filename
 REF="master"                             # Branch reference to trigger the action
 
