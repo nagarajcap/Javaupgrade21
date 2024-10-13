@@ -11,6 +11,9 @@ jobs:
     - name: Print Hello World
       run: echo "Hello, World!"
 
+    - name: Print files
+      run: ls
+
     - name: Performancce test
       run: jmeter -n -t ./SampleAPI.jmx -Jpath=api/users?page=1 -Jduration=110 -Jusers=10 -Jrampup=10 -l ./SampleAPIjtl.jtl
 
