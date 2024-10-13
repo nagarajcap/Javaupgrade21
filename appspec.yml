@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: new
+  - source: /new
     destination: /home/ec2-user/
 
 hooks:
