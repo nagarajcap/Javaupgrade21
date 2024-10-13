@@ -1,0 +1,12 @@
+#!/bin/bash
+GITHUB_REPO="nagarajcap/Javaupgrade21"  # Replace with your GitHub repo
+GITHUB_TOKEN="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"       # GitHub token with repo access
+GITHUB_WORKFLOW="jmeterui.yml"      # Replace with the exact workflow filename
+REF="master"                             # Branch reference to trigger the action
+
+# Trigger GitHub Action via GitHub API
+curl -X POST \
+  -H "Accept: application/vnd.github.v3+json" \
+  -H "Authorization: token $GITHUB_TOKEN" \
+  https://api.github.com/repos/$GITHUB_REPO/actions/workflows/$GITHUB_WORKFLOW/dispatches \
+  -d '{"ref":"'"$REF"'"}'
