@@ -7,4 +7,4 @@ hooks:
   AfterInstall:
     - timeout: 300
       runas: ec2-user
-      location: /home/ec2-user/script.sh
+      location: script.sh
