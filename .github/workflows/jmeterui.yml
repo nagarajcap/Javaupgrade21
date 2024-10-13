@@ -10,7 +10,9 @@ jobs:
     steps:
     - name: Print Hello World
       run: echo "Hello, World!"
-
+      
+    - uses: actions/checkout@v3
+    
     - name: Print files
       run: ls
 
